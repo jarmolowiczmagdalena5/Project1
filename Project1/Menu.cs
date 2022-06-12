@@ -8,13 +8,13 @@ namespace Project1
 {
     internal class Menu
     {
-        public void BasicMenu()
+        public void ShowBasicMenu()
         {
             Console.WriteLine("Wybierz funkcję w menu:");
             Console.WriteLine("1. Kalkulator");
             Console.WriteLine("2. Liczba pierwsza, Silnia, Liczba doskonała, Potęgi");
         }
-        public void Calculator()
+        public void ShowCalculatorMenu()
         {
             Console.WriteLine("Wybierz funkcję kalkluatora:");
             Console.WriteLine("1. Dodawanie");
@@ -22,7 +22,7 @@ namespace Project1
             Console.WriteLine("3. Mnożenie");
             Console.WriteLine("4. Dzielenie");
         }
-        public void ExtendedCalculator()
+        public void ShowExtendedCalculatorMenu()
         {
             Console.WriteLine("Wybierz funkcję:");
             Console.WriteLine("1. Liczba pierwsza");
