@@ -30,5 +30,22 @@ namespace Project1
             }
             return result;
         }
+        public bool GetGreatNumber(int number)
+        {
+            bool greatNumber;
+            int result = 0;
+            for (int i = 1; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    result += i;
+                }
+            }
+            if(result == number)
+                greatNumber = true;
+            else
+                greatNumber = false;
+            return greatNumber;
+        }
     }
 }
