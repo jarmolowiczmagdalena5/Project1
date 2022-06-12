@@ -74,9 +74,9 @@ switch (basicMenuChoice)
                 case 2:
                     {
                         Console.WriteLine("Podaj liczbę");
-                        int number1 = Convert.ToInt32(Console.ReadLine());
-                        int result = extendedCalculator.GetFactorial(number1);
-                        Console.WriteLine("Silnia z liczby " + number1 + "to: " + result);
+                        int number = Convert.ToInt32(Console.ReadLine());
+                        int result = extendedCalculator.GetFactorial(number);
+                        Console.WriteLine("Silnia z liczby " + number + "to: " + result);
                         break;
                     }
             }
