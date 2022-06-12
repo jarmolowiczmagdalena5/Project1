@@ -79,6 +79,17 @@ switch (basicMenuChoice)
                         Console.WriteLine("Silnia z liczby " + number + "to: " + result);
                         break;
                     }
+                case 3:
+                    {
+                        Console.WriteLine("Podaj liczbę");
+                        int number = Convert.ToInt32(Console.ReadLine());
+                        bool greatNumber = extendedCalculator.GetGreatNumber(number);
+                        if (greatNumber)
+                            Console.WriteLine("Liczba doskonała");
+                        else
+                            Console.WriteLine("To nie jest liczba doskonała");
+                        break;
+                    }
             }
             break;
         }
