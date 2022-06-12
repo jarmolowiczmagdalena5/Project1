@@ -20,10 +20,10 @@ namespace Project1
             }
             return primenumber;
         }
-        public int Factorial(int num1)
+        public int GetFactorial(int number1)
         {
             int result = 1;
-                for (int i = 1; i <= num1; i++)
+                for (int i = 1; i <= number1; i++)
                 {
                     result *= i;
                 }
