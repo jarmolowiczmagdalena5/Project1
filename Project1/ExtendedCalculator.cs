@@ -50,11 +50,12 @@ namespace Project1
         public int GetPowerOfNumber(int number1, int number2)
         {
             int result = number1;
-            for (int i = number1; i <= number2; i++)
+            for (int i = 1; i < number2; i++)
             {
                 result *= number1;
             }
             return result;
         }
+
     }
 }
