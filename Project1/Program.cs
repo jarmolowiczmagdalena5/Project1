@@ -62,10 +62,10 @@ switch (basicMenuChoice)
                 case 1:
                     {
                         Console.WriteLine("Podaj liczbę");
-                        int num1 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(extendedCalculator.PrimeNumber(num1));
-                        bool primenumber = extendedCalculator.PrimeNumber(num1);
-                        if (primenumber)
+                        int number = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(extendedCalculator.GetPrimeNumber(number));
+                        bool primeNumber = extendedCalculator.GetPrimeNumber(number);
+                        if (primeNumber)
                             Console.WriteLine("Liczba pierwsza");
                         else
                             Console.WriteLine("To nie jest liczba pierwsza");

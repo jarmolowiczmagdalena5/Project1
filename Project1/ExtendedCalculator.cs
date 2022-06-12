@@ -8,17 +8,18 @@ namespace Project1
 {
     internal class ExtendedCalculator
     {
-        public bool PrimeNumber(int num1)
+        public bool GetPrimeNumber(int number)
         {
-            bool primenumber = true;
-            for (int i = 2; i < num1; i++)
+            bool primeNumber = true;
+            for (int i = 2; i < number; i++)
             {
-
-                if (num1 % i == 0)
-                    primenumber = false;
-
+                if (number % i == 0)
+                {
+                    primeNumber = false;
+                    break;
+                }
             }
-            return primenumber;
+            return primeNumber;
         }
         public int GetFactorial(int number)
         {
