@@ -20,5 +20,14 @@ namespace Project1
             }
             return primenumber;
         }
+        public int Factorial(int num1)
+        {
+            int result = 1;
+                for (int i = 1; i <= num1; i++)
+                {
+                    result *= i;
+                }
+            return result;
+        }
     }
 }

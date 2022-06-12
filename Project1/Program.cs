@@ -56,8 +56,8 @@ switch (basicMenuChoice)
     case 2:
         {
             basicMenu.ShowExtendedCalculatorMenu();
-            int extendedCalculatorCoice = Convert.ToInt32(Console.ReadLine());
-            switch (extendedCalculatorCoice)
+            int extendedCalculatorChoice = Convert.ToInt32(Console.ReadLine());
+            switch (extendedCalculatorChoice)
             {
                 case 1:
                     {
@@ -69,6 +69,14 @@ switch (basicMenuChoice)
                             Console.WriteLine("Liczba pierwsza");
                         else
                             Console.WriteLine("To nie jest liczba pierwsza");
+                        break;
+                    }
+                case 2:
+                    {
+                        Console.WriteLine("Podaj liczbę");
+                        int num1 = Convert.ToInt32(Console.ReadLine());
+                        int result = extendedCalculator.Factorial(num1);
+                        Console.WriteLine("Silnia z liczby " + num1 + "to: " + result);
                         break;
                     }
             }
