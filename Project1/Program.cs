@@ -99,7 +99,6 @@ switch (basicMenuChoice)
                         Console.WriteLine(extendedCalculator.GetPowerOfNumber(number1, number2));
                         break;
                     }
-
             }
             break;
         }
