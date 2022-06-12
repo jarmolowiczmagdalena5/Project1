@@ -47,5 +47,14 @@ namespace Project1
                 greatNumber = false;
             return greatNumber;
         }
+        public int GetPowerOfNumber(int number1, int number2)
+        {
+            int result = number1;
+            for (int i = number1; i <= number2; i++)
+            {
+                result *= number1;
+            }
+            return result;
+        }
     }
 }

@@ -90,6 +90,16 @@ switch (basicMenuChoice)
                             Console.WriteLine("To nie jest liczba doskonała");
                         break;
                     }
+                case 4:
+                    {
+                        Console.WriteLine("Podaj podstawę potęgi");
+                        int number1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Podaj wykładnik potęgi");
+                        int number2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(extendedCalculator.GetPowerOfNumber(number1, number2));
+                        break;
+                    }
+
             }
             break;
         }
