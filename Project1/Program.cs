@@ -104,13 +104,13 @@ switch (basicMenuChoice)
                         Console.WriteLine("Podaj ilość liczb");
                         int amountOfNumber = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczby do średniej");
-                        int[] Numbers = new int[amountOfNumber];
+                        int[] numbers = new int[amountOfNumber];
 
-                        for (int i = 0; i < Numbers.Length; i++)
+                        for (int i = 0; i < numbers.Length; i++)
                         {
-                            Numbers[i] = Convert.ToInt32(Console.ReadLine());
+                            numbers[i] = Convert.ToInt32(Console.ReadLine());
                         }
-                        Console.WriteLine("Średnia wybranych liczba to: " + extendedCalculator.GetAverageOfNumbers(Numbers));
+                        Console.WriteLine("Średnia wybranych liczba to: " + extendedCalculator.GetAverageOfNumbers(numbers));
                         break;
                     }
                 case 6:
@@ -118,13 +118,13 @@ switch (basicMenuChoice)
                         Console.WriteLine("Podaj ilość liczb");
                         int amountOfNumber = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczby, które chcesz sprawdzić");
-                        int[] Numbers = new int[amountOfNumber];
+                        int[] numbers = new int[amountOfNumber];
 
-                        for (int i = 0; i < Numbers.Length; i++)
+                        for (int i = 0; i < numbers.Length; i++)
                         {
-                            Numbers[i] = Convert.ToInt32(Console.ReadLine());
+                            numbers[i] = Convert.ToInt32(Console.ReadLine());
                         }
-                        Console.WriteLine("Najmniejszą liczbą jest: " + extendedCalculator.GetSmallestNumber(Numbers));
+                        Console.WriteLine("Najmniejszą liczbą jest: " + extendedCalculator.GetSmallestNumber(numbers));
                         break;
                     }
                 case 7:
@@ -132,13 +132,13 @@ switch (basicMenuChoice)
                         Console.WriteLine("Podaj ilość liczb");
                         int amountOfNumber = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczby, które chcesz sprawdzić");
-                        int[] Numbers = new int[amountOfNumber];
+                        int[] numbers = new int[amountOfNumber];
 
-                        for (int i = 0; i < Numbers.Length; i++)
+                        for (int i = 0; i < numbers.Length; i++)
                         {
-                            Numbers[i] = Convert.ToInt32(Console.ReadLine());
+                            numbers[i] = Convert.ToInt32(Console.ReadLine());
                         }
-                        Console.WriteLine("Największą liczbą jest: " + extendedCalculator.GetLargestNumber(Numbers));
+                        Console.WriteLine("Największą liczbą jest: " + extendedCalculator.GetLargestNumber(numbers));
                         break;
                     }
             }

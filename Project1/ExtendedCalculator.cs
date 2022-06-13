@@ -63,29 +63,28 @@ namespace Project1
             {
                 Sum += Numbers[i];
             }
-            int result = Sum / Numbers.Length;
-            return result;
+            return Sum / Numbers.Length;
         }
-        public int GetSmallestNumber(int[] Numbers)
+        public int GetSmallestNumber(int[] numbers)
         {
-            int smallest = Numbers[0];
-            for (int i = 0; i < Numbers.Length; i++)
+            int smallest = numbers[0];
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if (Numbers[i] < smallest)
+                if (numbers[i] < smallest)
                 {
-                    smallest = Numbers[i];
+                    smallest = numbers[i];
                 }
             }
             return smallest;
         }
-        public int GetLargestNumber(int[] Numbers)
+        public int GetLargestNumber(int[] numbers)
         {
-            int largest = Numbers[0];
-            for (int i = 0; i < Numbers.Length; i++)
+            int largest = numbers[0];
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if (Numbers[i] > largest)
+                if (numbers[i] > largest)
                 {
-                    largest = Numbers[i];
+                    largest = numbers[i];
                 }
             }
             return largest;
