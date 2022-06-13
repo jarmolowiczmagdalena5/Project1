@@ -56,52 +56,39 @@ namespace Project1
             }
             return result;
         }
-        public int GetAverageOfNumbers(int[] number, int amoungOfNumber)
+        public int GetAverageOfNumbers(int[] Numbers)
         {
-            for (int i = 0; i < amoungOfNumber; i++)
-            {
-                number[i] = Convert.ToInt32(Console.ReadLine());
-            }
             int Sum = 0;
-            for (int i = 0; i < amoungOfNumber; i++)
+            for (int i = 0; i < Numbers.Length; i++)
             {
-                Sum += number[i];
+                Sum += Numbers[i];
             }
-            int result = Sum / amoungOfNumber;
+            int result = Sum / Numbers.Length;
             return result;
         }
-        public void GetSmallestAndLargestNumber()
+        public int GetSmallestNumber(int[] Numbers)
         {
-            Console.WriteLine("Podaj ilość liczb");
-            int amountOfNumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Podaj liczby, które chcesz sprawdzić");
-            int[] number = new int[amountOfNumber];
-
-            for (int i = 0; i < amountOfNumber; i++)
+            int smallest = Numbers[0];
+            for (int i = 0; i < Numbers.Length; i++)
             {
-                number[i] = Convert.ToInt32(Console.ReadLine());
-            }
-
-            int smallest = number[0];
-            for (int i = 0; i < amountOfNumber; i++)
-            {
-                if (number[i] < smallest)
+                if (Numbers[i] < smallest)
                 {
-                    smallest = number[i];
+                    smallest = Numbers[i];
                 }
             }
-
-            int largest = number[0];
-            for (int i = 0; i < amountOfNumber; i++)
+            return smallest;
+        }
+        public int GetLargestNumber(int[] Numbers)
+        {
+            int largest = Numbers[0];
+            for (int i = 0; i < Numbers.Length; i++)
             {
-                if (number[i] > largest)
+                if (Numbers[i] > largest)
                 {
-                    largest = number[i];
+                    largest = Numbers[i];
                 }
             }
-            Console.WriteLine("Najmniejszą liczbą jest" + smallest);
-            Console.WriteLine("Największą liczbą jest" + largest);
-
+            return largest;
         }
     }
 }

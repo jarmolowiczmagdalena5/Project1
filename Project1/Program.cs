@@ -20,7 +20,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczbe 2");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(basicCalculator.Addiction(number1, number2));
+                        Console.WriteLine("Wynik: " + basicCalculator.Addiction(number1, number2));
                         break;
                     }
                 case 2:
@@ -29,7 +29,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczbe 2");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(basicCalculator.Subtraction(number1, number2));
+                        Console.WriteLine("Wynik: " + basicCalculator.Subtraction(number1, number2));
                         break;
                     }
                 case 3:
@@ -38,7 +38,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczbe 2");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(basicCalculator.Multiplication(number1, number2));
+                        Console.WriteLine("Wynik: " + basicCalculator.Multiplication(number1, number2));
                         break;
                     }
                 case 4:
@@ -47,7 +47,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczbe 2");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(basicCalculator.Division(number1, number2));
+                        Console.WriteLine("Wynik: " + basicCalculator.Division(number1, number2));
                         break;
                     }
             }
@@ -96,7 +96,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj wykładnik potęgi");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine(extendedCalculator.GetPowerOfNumber(number1, number2));
+                        Console.WriteLine("Wynik: " + extendedCalculator.GetPowerOfNumber(number1, number2));
                         break;
                     }
                 case 5:
@@ -104,13 +104,41 @@ switch (basicMenuChoice)
                         Console.WriteLine("Podaj ilość liczb");
                         int amountOfNumber = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczby do średniej");
-                        int[] number = new int[amountOfNumber];
-                        Console.WriteLine(extendedCalculator.GetAverageOfNumbers(number, amountOfNumber));
+                        int[] Numbers = new int[amountOfNumber];
+
+                        for (int i = 0; i < Numbers.Length; i++)
+                        {
+                            Numbers[i] = Convert.ToInt32(Console.ReadLine());
+                        }
+                        Console.WriteLine("Średnia wybranych liczba to: " + extendedCalculator.GetAverageOfNumbers(Numbers));
                         break;
                     }
                 case 6:
                     {
-                        extendedCalculator.GetSmallestAndLargestNumber();
+                        Console.WriteLine("Podaj ilość liczb");
+                        int amountOfNumber = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Podaj liczby, które chcesz sprawdzić");
+                        int[] Numbers = new int[amountOfNumber];
+
+                        for (int i = 0; i < Numbers.Length; i++)
+                        {
+                            Numbers[i] = Convert.ToInt32(Console.ReadLine());
+                        }
+                        Console.WriteLine("Najmniejszą liczbą jest: " + extendedCalculator.GetSmallestNumber(Numbers));
+                        break;
+                    }
+                case 7:
+                    {
+                        Console.WriteLine("Podaj ilość liczb");
+                        int amountOfNumber = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Podaj liczby, które chcesz sprawdzić");
+                        int[] Numbers = new int[amountOfNumber];
+
+                        for (int i = 0; i < Numbers.Length; i++)
+                        {
+                            Numbers[i] = Convert.ToInt32(Console.ReadLine());
+                        }
+                        Console.WriteLine("Największą liczbą jest: " + extendedCalculator.GetLargestNumber(Numbers));
                         break;
                     }
             }
