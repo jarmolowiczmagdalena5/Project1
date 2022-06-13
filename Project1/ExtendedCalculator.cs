@@ -41,7 +41,7 @@ namespace Project1
                     result += i;
                 }
             }
-            if(result == number)
+            if (result == number)
                 greatNumber = true;
             else
                 greatNumber = false;
@@ -56,6 +56,38 @@ namespace Project1
             }
             return result;
         }
-
+        public int GetAverageOfNumbers(int[] numbers)
+        {
+            int Sum = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Sum += numbers[i];
+            }
+            return Sum / numbers.Length;
+        }
+        public int GetSmallestNumber(int[] numbers)
+        {
+            int smallest = numbers[0];
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] < smallest)
+                {
+                    smallest = numbers[i];
+                }
+            }
+            return smallest;
+        }
+        public int GetLargestNumber(int[] numbers)
+        {
+            int largest = numbers[0];
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] > largest)
+                {
+                    largest = numbers[i];
+                }
+            }
+            return largest;
+        }
     }
 }
