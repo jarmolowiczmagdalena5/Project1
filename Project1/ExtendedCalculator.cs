@@ -56,14 +56,14 @@ namespace Project1
             }
             return result;
         }
-        public int GetAverageOfNumbers(int[] Numbers)
+        public int GetAverageOfNumbers(int[] numbers)
         {
             int Sum = 0;
-            for (int i = 0; i < Numbers.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Sum += Numbers[i];
+                Sum += numbers[i];
             }
-            return Sum / Numbers.Length;
+            return Sum / numbers.Length;
         }
         public int GetSmallestNumber(int[] numbers)
         {
