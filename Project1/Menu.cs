@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Wybierz funkcję w menu:");
             Console.WriteLine("1. Kalkulator");
-            Console.WriteLine("2. Liczba pierwsza, Silnia, Liczba doskonała, Potęgi");
+            Console.WriteLine("2. Liczba pierwsza, Silnia, Liczba doskonała, Potęgi, Średnia liczba, Liczba największa i najmniejsza");
         }
         public void ShowCalculatorMenu()
         {

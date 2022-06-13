@@ -41,7 +41,7 @@ namespace Project1
                     result += i;
                 }
             }
-            if(result == number)
+            if (result == number)
                 greatNumber = true;
             else
                 greatNumber = false;
@@ -56,6 +56,52 @@ namespace Project1
             }
             return result;
         }
+        public int GetAverageOfNumbers(int[] number, int amoungOfNumber)
+        {
+            for (int i = 0; i < amoungOfNumber; i++)
+            {
+                number[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int Sum = 0;
+            for (int i = 0; i < amoungOfNumber; i++)
+            {
+                Sum += number[i];
+            }
+            int result = Sum / amoungOfNumber;
+            return result;
+        }
+        public void GetSmallestAndLargestNumber()
+        {
+            Console.WriteLine("Podaj ilość liczb");
+            int amountOfNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Podaj liczby, które chcesz sprawdzić");
+            int[] number = new int[amountOfNumber];
 
+            for (int i = 0; i < amountOfNumber; i++)
+            {
+                number[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            int smallest = number[0];
+            for (int i = 0; i < amountOfNumber; i++)
+            {
+                if (number[i] < smallest)
+                {
+                    smallest = number[i];
+                }
+            }
+
+            int largest = number[0];
+            for (int i = 0; i < amountOfNumber; i++)
+            {
+                if (number[i] > largest)
+                {
+                    largest = number[i];
+                }
+            }
+            Console.WriteLine("Najmniejszą liczbą jest" + smallest);
+            Console.WriteLine("Największą liczbą jest" + largest);
+
+        }
     }
 }

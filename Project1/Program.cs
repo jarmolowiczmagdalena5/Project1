@@ -99,6 +99,20 @@ switch (basicMenuChoice)
                         Console.WriteLine(extendedCalculator.GetPowerOfNumber(number1, number2));
                         break;
                     }
+                case 5:
+                    {
+                        Console.WriteLine("Podaj ilość liczb");
+                        int amountOfNumber = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Podaj liczby do średniej");
+                        int[] number = new int[amountOfNumber];
+                        Console.WriteLine(extendedCalculator.GetAverageOfNumbers(number, amountOfNumber));
+                        break;
+                    }
+                case 6:
+                    {
+                        extendedCalculator.GetSmallestAndLargestNumber();
+                        break;
+                    }
             }
             break;
         }
