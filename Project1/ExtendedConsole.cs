@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Project1
+﻿namespace Project1
 {
     internal class ExtendedConsole
     {
-        public static void WriteApprove(string text)
+        public static void WriteResult(string text)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(text);

@@ -23,7 +23,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczbe 2");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        ExtendedConsole.WriteApprove("Wynik: " + basicCalculator.Addiction(number1, number2));
+                        ExtendedConsole.WriteResult("Wynik: " + basicCalculator.Addiction(number1, number2));
                         break;
                     }
                 case 2:
@@ -32,7 +32,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczbe 2");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        ExtendedConsole.WriteApprove("Wynik: " + basicCalculator.Subtraction(number1, number2));
+                        ExtendedConsole.WriteResult("Wynik: " + basicCalculator.Subtraction(number1, number2));
                         break;
                     }
                 case 3:
@@ -41,7 +41,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczbe 2");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        ExtendedConsole.WriteApprove("Wynik: " + basicCalculator.Multiplication(number1, number2));
+                        ExtendedConsole.WriteResult("Wynik: " + basicCalculator.Multiplication(number1, number2));
                         break;
                     }
                 case 4:
@@ -50,7 +50,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj liczbe 2");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        ExtendedConsole.WriteApprove("Wynik: " + basicCalculator.Division(number1, number2));
+                        ExtendedConsole.WriteResult("Wynik: " + basicCalculator.Division(number1, number2));
                         break;
                     }
             }
@@ -69,7 +69,7 @@ switch (basicMenuChoice)
                         Console.WriteLine(extendedCalculator.GetPrimeNumber(number));
                         bool primeNumber = extendedCalculator.GetPrimeNumber(number);
                         if (primeNumber)
-                            ExtendedConsole.WriteApprove("Liczba pierwsza");
+                            ExtendedConsole.WriteResult("Liczba pierwsza");
                         else
                             ExtendedConsole.WriteError("To nie jest liczba pierwsza");
                         break;
@@ -79,7 +79,7 @@ switch (basicMenuChoice)
                         Console.WriteLine("Podaj liczbę");
                         int number = Convert.ToInt32(Console.ReadLine());
                         int result = extendedCalculator.GetFactorial(number);
-                        ExtendedConsole.WriteApprove("Silnia z liczby " + number + "to: " + result);
+                        ExtendedConsole.WriteResult("Silnia z liczby " + number + "to: " + result);
                         break;
                     }
                 case 3:
@@ -88,7 +88,7 @@ switch (basicMenuChoice)
                         int number = Convert.ToInt32(Console.ReadLine());
                         bool greatNumber = extendedCalculator.GetGreatNumber(number);
                         if (greatNumber)
-                            ExtendedConsole.WriteApprove("Liczba doskonała");
+                            ExtendedConsole.WriteResult("Liczba doskonała");
                         else
                             ExtendedConsole.WriteError("To nie jest liczba doskonała");
                         break;
@@ -99,7 +99,7 @@ switch (basicMenuChoice)
                         int number1 = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Podaj wykładnik potęgi");
                         int number2 = Convert.ToInt32(Console.ReadLine());
-                        ExtendedConsole.WriteApprove("Wynik: " + extendedCalculator.GetPowerOfNumber(number1, number2));
+                        ExtendedConsole.WriteResult("Wynik: " + extendedCalculator.GetPowerOfNumber(number1, number2));
                         break;
                     }
                 case 5:
@@ -113,7 +113,7 @@ switch (basicMenuChoice)
                         {
                             numbers[i] = Convert.ToInt32(Console.ReadLine());
                         }
-                        ExtendedConsole.WriteApprove("Średnia wybranych liczba to: " + extendedCalculator.GetAverageOfNumbers(numbers));
+                        ExtendedConsole.WriteResult("Średnia wybranych liczba to: " + extendedCalculator.GetAverageOfNumbers(numbers));
                         break;
                     }
                 case 6:
@@ -127,7 +127,7 @@ switch (basicMenuChoice)
                         {
                             numbers[i] = Convert.ToInt32(Console.ReadLine());
                         }
-                        ExtendedConsole.WriteApprove("Najmniejszą liczbą jest: " + extendedCalculator.GetSmallestNumber(numbers));
+                        ExtendedConsole.WriteResult("Najmniejszą liczbą jest: " + extendedCalculator.GetSmallestNumber(numbers));
                         break;
                     }
                 case 7:
@@ -141,7 +141,7 @@ switch (basicMenuChoice)
                         {
                             numbers[i] = Convert.ToInt32(Console.ReadLine());
                         }
-                        ExtendedConsole.WriteApprove("Największą liczbą jest: " + extendedCalculator.GetLargestNumber(numbers));
+                        ExtendedConsole.WriteResult("Największą liczbą jest: " + extendedCalculator.GetLargestNumber(numbers));
                         break;
                     }
             }

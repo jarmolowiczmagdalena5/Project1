@@ -1,7 +1,6 @@
 ﻿namespace Project1
 {
     internal class Menu
-
     {
         public void ShowBasicMenu()
         {
