@@ -27,5 +27,13 @@
             Console.WriteLine("6. Najmniejsza liczba ze zbioru");
             Console.WriteLine("7. Największa liczba ze zbioru");
         }
+        public void ShowTextFileMenu()
+        {
+            Console.WriteLine("Wybierz funkcję:");
+            Console.WriteLine("1. Odczytanie pełnego pliku");
+            Console.WriteLine("2. Odczytanie wybranej lini");
+            Console.WriteLine("3. Dodanie tekstu do pliku");
+            Console.WriteLine("4. Podaj linię, którą chcesz usunąć");
+        }
     }
 }
