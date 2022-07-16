@@ -7,6 +7,7 @@
             Console.WriteLine("Wybierz funkcję w menu:");
             Console.WriteLine("1. Kalkulator");
             Console.WriteLine("2. Operacje matematyczne");
+            Console.WriteLine("3. Plik tekstowy");
         }
         public void ShowCalculatorMenu()
         {
@@ -33,7 +34,7 @@
             Console.WriteLine("1. Odczytanie pełnego pliku");
             Console.WriteLine("2. Odczytanie wybranej lini");
             Console.WriteLine("3. Dodanie tekstu do pliku");
-            Console.WriteLine("4. Podaj linię, którą chcesz usunąć");
+            Console.WriteLine("4. Dodanie tekstu w konkretnej linii");
         }
     }
 }

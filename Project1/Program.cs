@@ -1,7 +1,7 @@
 ﻿using Project1;
 
-Console.ForegroundColor = ConsoleColor.Yellow;
 
+Console.ForegroundColor = ConsoleColor.Yellow;
 Menu basicMenu = new Menu();
 BasicCalculator basicCalculator = new BasicCalculator();
 ExtendedCalculator extendedCalculator = new ExtendedCalculator();
@@ -147,7 +147,6 @@ switch (basicMenuChoice)
             }
             break;
         }
-        /*
     case 3:
         {
             basicMenu.ShowTextFileMenu();
@@ -157,29 +156,36 @@ switch (basicMenuChoice)
                 case 1:
                     {
                         Console.WriteLine("Wyświetlanie pliku");
+                        textFile.ReadAllText();
                         break;
                     }
                 case 2:
                     {
                         Console.WriteLine("Podaj linię, linię chcesz wyświetlić");
+                        int line = Convert.ToInt32(Console.ReadLine());
+                        textFile.ReadTheLine(line);
                         break;
                     }
                 case 3:
                     {
-                        Console.WriteLine("Podaj linię, w której chcesz dodać tekst");
+                        Console.WriteLine("Dodaj tekst");
+                        string text = Console.ReadLine();
+                        textFile.AddAllTextToFile(text);
                         break;
                     }
                 case 4:
                     {
-                        Console.WriteLine("Podaj linię, którą chcesz usunąć");
-                        break; 
+                        Console.WriteLine("Podaj linię, w której chcesz dodać tekst");
+                        int line = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Podaj text jaki chcesz dodać");
+                        string text = Console.ReadLine();
+                        textFile.AddLineToFile(line, text);
+                        break;
                     }
             }
             break; 
         }
-        */
 }
-
 Console.ResetColor();
 
 
