@@ -151,19 +151,28 @@ switch (basicMenuChoice)
         {
             basicMenu.ShowTextFileMenu();
             int textFileChoice = Convert.ToInt32(Console.ReadLine());
-            switch(textFileChoice)
+            string file = @"C:\Users\jarmo\source\repos\Project1\TxtFile.txt";
+            switch (textFileChoice)
             {
                 case 1:
                     {
-                        Console.WriteLine("Wyświetlanie pliku");
-                        textFile.ReadAllText();
+                        if (File.Exists(file))
+                        {
+                            Console.WriteLine("Wyświetlanie pliku:\n");
+                            string[] lines = File.ReadAllLines(file);
+                            foreach (string line in lines)
+                                Console.WriteLine(line);
+                        }
+                        else
+                            Console.WriteLine("Plik nie istnieje");
                         break;
                     }
                 case 2:
                     {
                         Console.WriteLine("Podaj linię, linię chcesz wyświetlić");
                         int line = Convert.ToInt32(Console.ReadLine());
-                        textFile.ReadTheLine(line);
+                        string[] lines = File.ReadAllLines(file);
+                        Console.WriteLine(lines[line - 1]);
                         break;
                     }
                 case 3:

@@ -9,21 +9,7 @@ namespace Project1
 {
     internal class TextFile
     {
-        string textFile = @"C:\Users\jarmo\source\repos\Project1\PlikTxt.txt";
-        public void ReadAllText()
-        {
-            string[] lines = File.ReadAllLines(textFile);
-            if (File.Exists(textFile))
-            {
-                foreach (string line in lines)
-                    Console.WriteLine(line);
-            }
-        }
-        public void ReadTheLine(int numberOfline)
-        {
-            string[] lines = File.ReadAllLines(textFile);
-            Console.WriteLine(lines[numberOfline - 1]);
-        }
+        string textFile = @"C:\Users\jarmo\source\repos\Project1\TxtFile.txt";
         public void AddAllTextToFile(string text)
         {
             File.AppendAllText(textFile, text + Environment.NewLine);
